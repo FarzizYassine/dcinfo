@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>C'est le temps ! : Pour perdre ou gangner du poids </title>
+	<meta name="discription" content="comment perdre du poids comment gagner du poids ?">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href= "logotmf.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+	<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: 'Square Peg', cursive;
+    }
+	#head{
+		height: 50px;
+		width: 100%;
+		background-color: white;
+		border-bottom: 1px solid #56c596;	
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		visibility: hidden;
+		animation: header 1s linear forwards;
+		
+	}
+
+	#head img{
+		width: 50px;
+		height: 50px;
+	}
+	#head nav{
+		margin-top: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#head nav a{
+		text-decoration: none;
+		color: #31ddb2;
+		font-size: 25px;
+	}
+	#head nav a:hover{
+		color: #205072;
+		transition-duration: 0.8s;
+	}
+	.contact{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		color: white;
+		font-size: 20px;
+	}
+	#contacte{
+		text-decoration: none;
+		color: white;
+	}
+	.contact a{
+		text-decoration: none;
+		color: white;
+		transition-duration: 1s;
+	}
+	.contact a:hover{
+		color: #205072;
+		transition-duration: 1s;
+	}
+	#pour-plus{
+		height: 275px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		background-color: #56c596;
+		align-items: center;
+	}
+	
+	.articles{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		font-size: 20px;
+	}
+	.mail{
+		display: flex;
+		flex-direction: column;
+		font-size: 30px;
+	}
+	.mail h6{
+		color: #205072;
+		font-size: 20px
+	}
+	.mail h6 i{
+		margin-right: 10px;
+		color: white;
+	}
+	.articles a{
+		text-decoration: none;
+		display: flex;
+		 color: white;
+		 font-size: 25px;
+		 transition-duration: 0.8s;
+	}
+	.articles a p{
+        visibility: hidden;
+	}
+	.articles a:hover{
+		color: #205072;
+		transition-duration: 0.8s;
+	}
+	.articles a:hover p{
+		visibility: visible;
+	}
+	.navigation{
+		display: flex;
+		flex-direction: column;
+	}
+	.navigation a{
+	     text-decoration: none;
+		 color: white;
+		 width: 100%;
+		 font-size: 25px;
+		 transition-duration: 0.8s;
+	}
+	.navigation a:hover{
+		transform: translateX(4px);
+		color: #205072;
+		transition-duration: 0.8s;
+	}
+
+	::-webkit-scrollbar {
+		width: 7px;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #31ddb2;
+		border-radius: 15%;
+	}
+	::-webkit-scrollbar-track {
+		background-color: #94f3db;
+	}
+	@keyframes header {
+		0%{
+			transform: translateY(-50px);
+			visibility: visible;
+		}
+		100%{
+			transform: translateY(0);
+			visibility: visible;
+		}
+	}
+	#lastone {
+		text-align: center;
+		padding: 15px;
+		background-color: #56c596;
+		border-top: 1px solid #205072;
+		color: white;
+		font-size: 20px;
+	}
+	#lastone h3 a{
+		text-decoration: none;
+        margin-left: 5px;
+		color: #205072;
+	}
+	#contenue{
+        min-height: 100vh;
+		display: flex;
+	}
+	@media only screen and (max-width : 500px){
+		.cards{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.logos{
+			display: none;
+		}
+		#pour-plus{
+			flex-direction: column;
+			height: 550px;
+			width: 100%;
+			align-items: flex-start;
+		}
+		.mail h6{
+			display: flex;
+			width: 100%;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-left: 60px;
+		}
+		.articles {
+			width: 100%;
+			align-items: flex-start;
+			margin-bottom: 10px;
+		}
+		.articles a{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-left: 60px;
+		}
+		
+        .contact a{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			margin-left: 60px;
+		}
+		.navigation {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	.navigation a{
+			transform: translateX(80px);
+			margin-top: 5px;
+			margin-bottom: 5px;
+			width: 100px;	
+			font-size: 20px;
+		}
+	}
+</style>
+<body>
+	
+	<div id="intro">
+		<header id="head">	
+		<a href="#intro"><img src="logotm.png" id="image"></a>
+		<nav>
+			<a href="#denous">À propos de nous</a>
+			<a href="#nos-service">Nos service</a>
+			<a href="#pour-plus">Pour Plus</a>
+		</nav>
+	</header>
+     <div id="contenue">
+		<div class="txt">
+        <h1 style="color: #56c596; font-size: 45px; margin-top: 30px;">Qu'est-ce que Le déficit calorique ?</h1>
+        <p style="font-size: 25px; width: 100%; height: 100%; margin-top: 50px; color: #205072; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+			Le déficit calorique est un état nutritionnel dans lequel l'apport calorique quotidien d'une personne est inférieur à ses besoins énergétiques. Cela peut être obtenu soit en réduisant les calories consommées, soit en augmentant les dépenses énergétiques, ou en combinant les deux.<br>
+            <br>
+			Le déficit calorique est souvent utilisé comme un moyen de perdre du poids, car la perte de poids est le résultat d'un déficit énergétique sur une période prolongée. Lorsque le corps reçoit moins de calories qu'il n'en a besoin pour fonctionner, il utilise les réserves de graisse pour produire de l'énergie, ce qui entraîne une perte de poids.<br>
+<br>
+			
+			Cependant, il est important de noter que la perte de poids ne se produit pas uniquement en raison d'un déficit calorique, mais également en raison d'autres facteurs tels que la qualité des aliments consommés, la répartition des macronutriments et les dépenses énergétiques totales. Il est également important de s'assurer que le déficit calorique n'est pas trop important, car une restriction calorique excessive peut entraîner des carences nutritionnelles et des effets négatifs sur la santé.<br>
+			<br>
+			Il est recommandé de consulter un professionnel de la nutrition ou un diététiste avant de suivre un régime de déficit calorique, surtout si vous avez des problèmes de santé ou si vous souhaitez perdre du poids de manière significative.<br>
+			<br>
+			En conclusion, le déficit calorique peut être un outil utile pour la perte de poids, mais il est important de le faire de manière responsable et sous la supervision d'un professionnel. Il est également important de se concentrer sur la qualité des aliments consommés et de maintenir une alimentation équilibrée pour assurer une santé optimale.
+			<br>
+			<br>
+			<br>
+</p>
+</div>
+<div class="ads">
+
+</div>
+     </div>
+	<div id="pour-plus">
+      <div class="mail">
+		<h4 style="color: #205072;">Email</h4>
+		<h6><i class="fa-solid fa-envelope"></i>cestletemps@gmail.com</h6>
+	  </div>
+	  <div class="articles">
+		<h4 style="color: #205072;">Articles interessant</h4>
+		<a href="">Le jeûne intermittent <p>?</p></a>
+		<a href="">Le perds du poids <p>?</p></a>
+		<a href="file:///C:/Users/asus/Desktop/it's%20time/article/Untitled-1.html">Le Keto diet <p>?</p></a>
+		<a href="file:///C:/Users/asus/Desktop/it's%20time/dcart/dcart.html">Le déficit calorique<p>?</p></a>
+	  </div>
+	  <div class="navigation">
+		    <a href="#denous"><i class="fa-solid fa-chevron-right"></i>À propos de nous</a>
+			<a href="#nos-service"><i class="fa-solid fa-chevron-right"></i>Nos service</a>
+	  </div>
+	 <div class="contact">
+         <h3 style="color: #205072;">Suivez nous sur</h3>
+		<a href="https://www.instagram.com/cest.letemps/"><i class="fa-brands fa-instagram"></i>Instagram</a>	
+		<a href=""><i class="fa-brands fa-facebook"></i>Facebook</a>
+		<a href=""><i class="fa-sharp fa-solid fa-shop"></i>Store</a>
+	</div>
+</div>
+<div id="lastone">
+	<h3>Faite par<a href="file:///C:/Users/asus/Desktop/portfolio/index.html">@Farziz yassine</a></h3>
+</div>
+    <script>
+		AOS.init();
+	  </script>
+	  <script>
+	  </script>
+</body>
+</html>
